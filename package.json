@@ -1,0 +1,14 @@
+{
+  "name": "web-site-practic",
+  "version": "1.0.0",
+  "description": "My new site",
+  "source": "index html",
+  "scripts": {
+    "scss:style": "sass --style:expanded --watch styles:fold"
+  },
+  "author": "Albert Mr",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.80.3"
+  }
+}
