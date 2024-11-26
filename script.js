@@ -60,9 +60,12 @@ const render = () => {
         crossBtn.value = 'x';
         
         crossBtn.addEventListener('click', () => {
-            todoList.splice(index, 1);
-            saveToLocalStorage();
-            render();
+            const rem = confirm('Вы правда хотите удалить?')
+            if (rem === true) {
+                todoList.splice(index, 1);
+                saveToLocalStorage();
+                render();
+            }
         });
     
         list.appendChild(res);
